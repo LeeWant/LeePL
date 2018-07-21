@@ -14,7 +14,7 @@ public class LuntanServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("-----------------luntanServlet doGet----------------");
-		request.getRequestDispatcher("forumtest.jsp").forward(request, response);
+		request.getRequestDispatcher("zhitie.jsp").forward(request, response);
 	}
 
 

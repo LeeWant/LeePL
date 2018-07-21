@@ -1,0 +1,150 @@
+/*这里是榜单推荐动态实现效果块*/
+#cook{
+    position: relative;
+    /*background: black;*/
+}
+.cookHot{
+    margin-top: -100px;
+    height:100vh;
+}
+
+.slider ,.main ,.main-i
+{
+    width:100%;/*这三行很重要*/
+    height:94.5vh;
+    /*background: black;*/
+    position: relative;
+}
+.main{
+    overflow: hidden;
+}
+.main-i img{
+    width:  380px;
+    position: absolute;
+    left: 180px;
+    top: 100px;
+    z-index: 1;
+}
+/*这里设置caption的属性*/
+.caption{
+    width:46.9%;
+    height:100%;
+    background: beige;
+    position: absolute;
+    right: 0;
+    padding: 130px 20px 20px ;
+    z-index: 2;
+    letter-spacing: 1px;
+}
+.caption h2{
+    font-size: 32px;
+    line-height: 50px;
+    color: #009933;
+    position:absolute;
+    right:15px;
+    top:60px;
+    font-family:Oswald;
+}
+.caption dt{
+    font-size: 24px;
+    line-height: 60px;
+    text-align: left;
+    letter-spacing: 2px;
+}
+.caption dd{/*设置字*/
+    font-size:16px;
+    line-height:1.5em;
+    text-indent:2em;/*首行缩进两个字*/
+}
+.caption a{
+    text-decoration: none;
+    color: #679847;
+}
+.caption a:hover{
+    color: #c07372;
+}
+.ctrl{/*翻页提示条*/
+    width: 50%;
+    height:  20px;
+    line-height: 13px;
+    text-align: center;
+    position: absolute;
+    top:580px;
+    left: 30px;
+}
+.ctrl-i{
+    display:inline-block;
+    width:  100px;
+    height: 13px;
+    background-color:#242424;
+    position: relative;
+    margin-left: 1px;
+}
+.ctrl-i img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    z-index: 2;
+    opacity: 0;
+    -webkit-transition:all .2s
+}
+.ctrl-i:hover{
+    background-color: #f0f0f0;
+}
+.ctrl-i:hover img{
+    bottom: 13px;
+    opacity: 1;
+}
+.ctrl-i_active:hover,
+.ctrl-i_active{
+    background-color: peachpuff;
+}
+.ctrl-i_active:hover img{
+    opacity: 0;
+}
+.main-i{
+    opacity: 0;
+    position:absolute;
+    right: 50%;
+    top:0;
+    -webkit-transition:all .5s;
+}
+.main-i dl{
+    margin-right: 0;
+}
+.main-i h2,
+.main-i dl{
+    opacity: 0;
+    -webkit-transition:all 1.5s .8s;
+}
+.main-i_active{
+    opacity: 1;
+    right: 0;
+}
+.main-i_active h2,
+.main-i_active dl{
+    opacity: 1;
+    margin-right: 0;
+}
+.caption{
+    /*margin-right: 5%;*/
+}
+.hot2{
+    margin-top: -80px;
+    height: 80px;
+    position: relative;
+}
+.hot2 h1{
+    color: #009933;
+    text-align: left;
+    line-height: 80px;
+    /*padding-top: 20px;*/
+    font-weight: normal;
+}
+.hot2 img{
+    width: 36px;
+    position: absolute;
+    top: 25px;
+    left: 540px;
+}

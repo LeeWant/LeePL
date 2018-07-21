@@ -1,0 +1,40 @@
+.aside{
+    width: 300px;
+    height: 99.9vh;
+    background: white;
+    position: absolute;
+    left: -300px;
+    top:50px;
+    z-index: 1;
+    /*display: none;*/
+}
+.menu_2 img{
+    width: 18px;
+    position: relative;
+    top: 0;
+    right: 10px;
+    float: right;
+    display: inline-block;
+}
+#menuA{
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+}
+#menuA ul{
+    width: 100px;
+    margin-top: 40px;
+    margin-left: 105px;
+}
+#menuA li{
+    padding: 10px;
+    height: 20px;
+}
+#menuA span{
+    font-size: 26px;
+    margin-left: 95px;
+}
+#menuA a{
+    text-decoration: none;
+    color: #679847;
+}
